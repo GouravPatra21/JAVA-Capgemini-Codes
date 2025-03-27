@@ -1,11 +1,11 @@
 package inheritance;
 
 public class Car extends Vehicle{
-	int price;
-	public Car(String name, String type, int price) {
-		this.name = name;
-		this.engineType = type;
-		this.price = price;
+	int hp;
+	public Car(String name, String engineType, int hp) {
+		super(name, engineType);
+		this.hp = hp;
+		System.out.println("Child Constructor");
 	}
 
 }

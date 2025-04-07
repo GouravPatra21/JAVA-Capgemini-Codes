@@ -51,6 +51,7 @@ public class Driver {
 				
 			case 4:
 				flag = false;
+				System.out.println("Exited from the code Succesfully");
 				break;
 				
 				

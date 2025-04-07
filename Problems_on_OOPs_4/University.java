@@ -2,15 +2,19 @@ package Problems_on_OOPs_4;
 
 public class University {
 	private Person[] people;
-	private int count;
+    static int count = 0; 
+//	private int count;
 	public University(int size) {
 		this.people = new Person[size];
-		this.count = 0;
+//		this.count = 0;
 	}
 	public void addPerson(Person p) {
 		if(count < people.length) {
 			people[count++] = p;
 			System.out.println("Person added");
+		}
+		else {
+			System.out.println(" Person Array is Full");
 		}
 	}
 	public void showPeople() {
